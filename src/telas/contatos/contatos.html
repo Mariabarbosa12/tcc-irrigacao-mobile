@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contatos - BLUVA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Lucida Sans", sans-serif;
+      background-image: url('../../../assets/fundomobile.png');
+      
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      width: 100%;
+      height: 60px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .header img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .header span {
+      color: #0C1792;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.78);
+      width: 290px;
+      height: 360px;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .titulo {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contato {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid #aaa;
+      padding: 10px 0;
+    }
+
+    .contato img {
+      width: 45px;
+      margin-right: 15px;
+    }
+
+    .apelido {
+      font-size: 16px;
+      color: #333;
+    }
+     .back-button {
+      position: absolute;
+      left: 15px;
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+     <button class="back-button" onclick="window.location.href='../home/home.html'">
+      <img src="../../../assets/voltar.png" />
+    </button>
+    <img src="../../../assets/logo.png" alt="Logo BLUVA">
+    <span>BLUVA</span>
+  </div>
+
+  <div class="container">
+    <div class="titulo">CONTATOS</div>
+
+    <div class="contato">
+      <img src="../../../assets/usu.png" alt="Ícone usuário">
+        <a href="../chat/chat.html" class="apelido">@Usuario123</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

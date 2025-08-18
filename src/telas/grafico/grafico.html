@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Consumo de Água - BLUVA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Lucida Sans", sans-serif;
+      background-image: url('../../../assets/fundomobile.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       min-height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      height: 60px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #ccc;
+      position: relative
+    }
+
+    .header img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .header span {
+      color: #0C1792;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .back-button {
+      position: absolute;
+      left: 15px;
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255);
+      opacity: 78%;
+      width:270px;
+      height: 500px;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .chart-container {
+        width: 100%;
+        height: 350px; 
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .chart-container canvas {
+        width: 220px !important;
+         height: 330px !important;
+    }
+
+    .icon-button img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <button class="back-button" onclick="window.location.href='../home/home.html'">
+      <img src="../../../assets/voltar.png" />
+    </button>  
+    <img src="../../../assets/logo.png">
+    <span>BLUVA</span>
+  </div>
+
+  <div class="container">
+    <h2 style="margin-bottom: 12px; font-size: 20px;">CONSUMO DE ÁGUA</h2>
+
+    <div class="chart-container">
+      <canvas id="consumoAgua"></canvas>
+    </div>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('consumoAgua').getContext('2d');
+    const consumoAgua = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB'],
+        datasets: [{
+          label: 'Consumo de Água (L)',
+          data: [300, 250, 400, 350, 200, 150, 100],
+          backgroundColor: '#353967',
+          borderColor: '#2f65d1',
+          borderWidth: 1,
+          
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 500,
+            ticks: {
+              stepSize: 100
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

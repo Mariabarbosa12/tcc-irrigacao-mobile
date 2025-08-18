@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Entrada from './src/telas/entrada';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Entrada/>
+      <Text> silas e maju
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
