@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tela HOME - BLUVA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Lucida Sans", sans-serif;
+      background-image: url('../../../assets/fundomobile.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      height: 60px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .header img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .header span {
+      color: #0C1792;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255);
+      opacity: 78%;
+     width: 300px;
+      height: 370px;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 125px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sensor-cards {
+      
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background-color: #cfe8ff;
+      border-radius: 10px;
+      width: 48%;
+      height: 130px;
+      padding: 17px;
+      text-align: center;
+      margin-top: 20px;
+      justify-content: center;
+      color: #0C1792;
+      font-weight: bold;
+      font-size: 10px;
+
+    }
+
+    .card img {
+      width:38px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .card p {
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .icon-button {
+      background-color: #e0f0ff;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      width: 55px;
+      height:55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 80px;
+    }
+
+    .icon-button img {
+      width:35px;
+      height: 35px;
+    }
+
+    #ligarbotao {
+      background-color: #74b686;
+    }
+
+    #ligarbotao.off {
+      background-color: #dd5a4c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="../../../assets/logo.png">
+    <span>BLUVA</span>
+  </div>
+
+  <div class="container">
+    <div class="sensor-cards">
+      <div class="card">
+        <h3>UMIDADE</h3>
+        <img src="../../../assets/umidade.png">
+        <p>100%</p>
+      </div>
+      <div class="card">
+        <h3>TEMPERATURA</h3>
+        <img src="../../../assets/temperatura.png">
+        <p>100%</p>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <a href="../grafico/grafico.html">
+        <button class="icon-button">
+          <img src="../../../assets/gota.png" alt="Gráfico">
+        </button>
+      </a>
+
+      <a href="../perfil/perfil.html">
+        <button class="icon-button">
+          <img src="../../../assets/user.png" alt="Perfil">
+        </button>
+      </a>
+
+      <a href="../chat/chat.html">
+        <button class="icon-button">
+          <img src="../../../assets/ajuda.png" alt="Ajuda">
+        </button>
+      </a>
+      
+      <button class="icon-button" id="ligarbotao" onclick="togglePower()">
+        <img src="../../../assets/liga.png" alt="Power">
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function togglePower() {
+      const lg = document.getElementById('ligarbotao');
+      lg.classList.toggle('off');
+    }
+  </script>
+
+</body>
+</html>

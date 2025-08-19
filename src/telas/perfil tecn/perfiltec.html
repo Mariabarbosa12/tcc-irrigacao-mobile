@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil do Técnico - BLUVA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Lucida Sans", sans-serif;
+      background-image: url('../../../public/fundinho.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+    .header img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .header span {
+      color: #0C1792;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.78);
+      width: 90%;
+      max-width: 840px;
+      padding: 30px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #000000;
+      text-align: center;
+    }
+
+    .profile-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    .info-section {
+      width: 60%;
+    }
+
+    .button-section {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .perfil-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .perfil-info img {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .perfil-info div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .perfil-info span {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .input-info {
+      margin-bottom: 15px;
+    }
+
+    .input-info input {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .cccontainer {
+      background-color: #b3d7ff;
+      padding: 20px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .cccontainer .info-section,
+    .cccontainer .button-section {
+      width: 48%;
+    }
+
+    .button-section button {
+      background-color: #ffffff;
+      border: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .button-section button:hover {
+      background-color: #80b19d;
+    }
+
+    .button-section button.green-button {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .button-section button.green-button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="../../../public/logo.png">
+    <span>BLUVA</span>
+  </div>
+
+  <div class="container">
+    <h2>PERFIL DO TÉCNICO</h2>
+
+    <div class="cccontainer">
+      
+      <div class="info-section">
+        <div class="perfil-info">
+          <img src="../../../public/usu.png" alt="Foto de Perfil">
+          <div>
+            <span>APELIDO:</span>
+            <input type="text" value="@Técnico123" disabled>
+          </div>
+        </div>
+
+        <div class="input-info">
+          <span>NOME:</span>
+          <input type="text" value="Joana Lima" disabled>
+
+          <span>EMAIL:</span>
+          <input type="text" value="joanali@email.com" disabled>
+
+          <span>NÚMERO DE TELEFONE:</span>
+          <input type="text" value="(11) 91234-1138" disabled>
+
+          <span>SENHA:</span>
+          <input type="password" value="******" disabled>
+        </div>
+      </div>
+
+      <div class="button-section">
+        <button>ALTERAR FOTO DE PERFIL</button>
+        <button>ALTERAR APELIDO</button>
+        <button>ALTERAR DADOS PESSOAIS</button>
+        <button>EXCLUIR CONTA</button>
+        <button>SAIR DA CONTA</button>
+
+        <a href="../contatos/contatos.html">
+          <button class="green-button">IR PARA CONTATOS</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
