@@ -21,10 +21,12 @@ export default function Entrada() {
     // <View style={styles.container}>
     <ImageBackground source={fundo} resizeMode="contain" style={styles.container}>
       <View style={styles.containerLogo}>
+         <View style={styles.containerLg}>
         <Image style={styles.logo} source={logo} />
         <Text style={styles.txtLogo}>BLUVA</Text>
+        </View>
 
-        
+        <View style={styles.containerSelect}>
         <Picker style={styles.pickerWrapper}
   selectedValue={selectedUsuario}
   onValueChange={(itemValue, itemIndex) =>
@@ -39,9 +41,10 @@ export default function Entrada() {
         <option value="usuario">Usuário</option>
         <option value="tecnico">Técnico</option>
       </select> */}
-      <Button  style={styles.button} color={'#5a5b65'} title ="Entrar"
+      <Button   color={'#5a5b65'} title ="Entrar"
           onPress={() => 0}
         /> 
+        </View>
       </View>
         
     </ImageBackground>

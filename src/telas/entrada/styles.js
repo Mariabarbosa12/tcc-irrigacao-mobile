@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
   //   alignItems: 'center',
   // },
   containerLogo: {
+
     alignItems: 'center',
     justifyContent: 'center',
     padding: 5, 
@@ -85,11 +86,20 @@ const styles = StyleSheet.create({
       borderRadius:15,
       marginLeft: 45,
   },
+    containerLg: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 5, 
+ 
+    marginTop:40,
+  },
   logo: {
      flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 60,
+    height: 50,
+    width:50,
     marginTop:1,
     marginRight: 20, 
     resizeMode: 'stretch',
@@ -107,11 +117,19 @@ const styles = StyleSheet.create({
     color: '#000',
     fontFamily: 'Poppins',
   },
+   containerSelect: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 5, 
+    marginBottom: 30,
+    marginTop: 10 , 
+
+  },
   pickerWrapper: {
     flexDirection: 'row' ,
     borderWidth: 1,
     height: 30,
-    width:100,
+    width:190,
     borderColor: '#ccc',
     borderRadius: 3,
     marginTop: 20,
@@ -120,29 +138,25 @@ const styles = StyleSheet.create({
     fontSize: 18,
     alignItems: 'center' ,
   },
-  select: {
-    width: '100%',
-    height: 50,
-  },
-  button: {
-    width: '100%',
-    height:100,
-    padding: 12,
-    borderRadius: 8,
-    alignItems: 'center',
-      color: '#fff',
-    fontSize: 16,
-  },
-  buttonPressed: {
-    backgroundColor: '#4a4b55',
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-  },
-  buttonTextPressed: {
-    color: '#e0e0e0',
-  },
+  // button: {
+  //   width: '100%',
+  //   height:100,
+  //   padding: 12,
+  //   borderRadius: 8,
+  //   alignItems: 'center',
+  //     color: '#fff',
+  //   fontSize: 16,
+  // },
+  // buttonPressed: {
+  //   backgroundColor: '#4a4b55',
+  // },
+  // buttonText: {
+  //   color: '#fff',
+  //   fontSize: 16,
+  // },
+  // buttonTextPressed: {
+  //   color: '#e0e0e0',
+  // },
 });
 
 export default styles;
