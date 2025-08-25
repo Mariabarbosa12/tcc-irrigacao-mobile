@@ -29,21 +29,23 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   logoText: {
-    color: '#0C1792',
-    fontSize: 34,
+    color: '#111d9eff',
+    fontSize: 28,
     fontWeight: 'bold',
   },
   chartContainerBox: {
     backgroundColor: 'rgba(255,255,255,0.78)',
-    width: 300,
+    width: 330,
     height: 460,
-    padding: 30,
+    padding: 20,
     borderRadius: 20,
     marginTop: 90,
     alignItems: 'center',
+    marginLeft:15,
+
   },
   title: {
-    fontSize: 20,
+    fontSize: 18,
     marginBottom: 12,
     fontWeight: 'bold',
   },

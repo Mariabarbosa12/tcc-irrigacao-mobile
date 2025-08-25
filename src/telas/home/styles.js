@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 34,
     fontWeight: 'bold',
-    color: '#0C1792',
+    color: '#111d9eff',
   },
 
   // CONTAINER PRINCIPAL
