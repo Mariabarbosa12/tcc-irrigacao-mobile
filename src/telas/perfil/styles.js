@@ -128,18 +128,18 @@ export default StyleSheet.create({
   },
   button: {
     backgroundColor: '#fff',
-    padding: 10,
+    padding: 5,
     width: '108%',
-    borderRadius: 10,
+    borderRadius: 7,
     marginTop: 35,
     alignItems: 'center',
   },
    buttonS: {
     backgroundColor: '#e98a7fff',
     
-    padding: 10,
+    padding: 5,
     width: '108%',
-    borderRadius: 10,
+    borderRadius:7,
     marginTop: 35,
     alignItems: 'center',
   },
