@@ -7,11 +7,12 @@ import Cadastro from './src/telas/cadastro';
 import Home from './src/telas/home';
 import Grafico from './src/telas/grafico';
 import Chat from './src/telas/chat';
+import Perfil from './src/telas/perfil';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Chat />
+      <Perfil />
       <StatusBar style="auto" />
     </View>
   );

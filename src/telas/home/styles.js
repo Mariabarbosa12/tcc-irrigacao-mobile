@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   headerText: {
-    fontSize: 34,
+    fontSize: 30,
     fontWeight: 'bold',
     color: '#111d9eff',
   },

@@ -24,13 +24,13 @@ const styles = StyleSheet.create({
     height: 30,
   },
   logoHeader: {
-    width: 30,
-    height: 30,
+    width: 40,
+    height: 40,
     marginRight: 10,
   },
   logoText: {
     color: '#111d9eff',
-    fontSize: 28,
+    fontSize: 30,
     fontWeight: 'bold',
   },
   chartContainerBox: {
