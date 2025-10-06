@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
   //   alignItems: 'center',
   // },
   containerLogo: {
-
     alignItems: 'center',
     justifyContent: 'center',
     padding: 5, 
@@ -98,8 +97,8 @@ const styles = StyleSheet.create({
      flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 50,
-    width:50,
+    height: 65,
+    width:65,
     marginTop:1,
     marginRight: 20, 
     resizeMode: 'stretch',
@@ -108,16 +107,24 @@ const styles = StyleSheet.create({
      flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: 20, 
+    fontSize: 26, 
     fontWeight: 'bold', 
   }, 
-  title: {
-    fontSize: 20,
-    fontWeight: '600',
-    color: '#000',
-    fontFamily: 'Poppins',
-  },
-   containerSelect: {
+   txt: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 16, 
+    fontWeight: 'bold', 
+     marginBottom: 30,
+     color: 'rgba(61, 58, 58, 1)',
+  }, 
+  // title: {
+  //   fontSize: 20,
+  //   fontWeight: '600',
+  //   color: '#000',
+  //   fontFamily: 'Poppins',
+  // },
+   containerTxt: {
     alignItems: 'center',
     justifyContent: 'center',
     padding: 5, 

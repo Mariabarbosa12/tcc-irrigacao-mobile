@@ -14,7 +14,7 @@ import Contatos from './src/telas/contatos';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Contatos />
+      <Home/>
       <StatusBar style="auto" />
     </View>
   );
