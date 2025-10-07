@@ -72,6 +72,13 @@ const styles = StyleSheet.create({
     color: '#0C1792',
     fontWeight: 'bold',
   },
+  picker: {
+    fontSize: 14,
+    marginRight:130,
+    backgroundColor: '#d4eaffff',
+    color: '#1d236d',
+    borderRadius: 10,
+  },
 
   // BOTÕES
   buttonRow: {
