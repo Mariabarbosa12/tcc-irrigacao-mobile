@@ -2,63 +2,67 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-      flex: 1, 
-    },
-    
-    // .container {
-    //   background-color: rgba(255, 255, 255, 0.78);
-    //   width: 350px;
-    //   height:300px;
-    //   padding: 30px;
-    //   border-radius: 10px;
-    //   margin-top: 180px;
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    // }
+    // flex: 1,
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
 
-    // h1 {
-    //   font-family: 'Poppins', sans-serif;
-    //   font-size: 32px;
-    //   color: black;
-    //   margin-top: 28px;
-    //   margin-bottom: 30px;
-    // }
+  // .container {
+  //   background-color: rgba(255, 255, 255, 0.78);
+  //   width: 350px;
+  //   height:300px;
+  //   padding: 30px;
+  //   border-radius: 10px;
+  //   margin-top: 180px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
 
-    // .icon-button {
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    //   margin-bottom: 30px;
-    // }
+  // h1 {
+  //   font-family: 'Poppins', sans-serif;
+  //   font-size: 32px;
+  //   color: black;
+  //   margin-top: 28px;
+  //   margin-bottom: 30px;
+  // }
 
-    // select {
-    //   width: 100%;
-    //   padding: 12px;
-    //   font-size: 16px;
-    //   border-radius: 8px;
-    //   border: 1px solid #ccc;
-    //   margin-bottom: 20px;
-    //   background-color: #fff;
-    //   opacity: 100%;
-    //   margin-top: 10px;
-    // }
+  // .icon-button {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-bottom: 30px;
+  // }
 
-    // button {
-    //   width: 100%;
-    //   padding: 12px;
-    //   font-size: 16px;
-    //   background-color: #5a5b65;
-    //   color: white;
-    //   border: none;
-    //   border-radius: 8px;
-    //   cursor: pointer;
-    //   transition: 0.3s;
-    // }
+  // select {
+  //   width: 100%;
+  //   padding: 12px;
+  //   font-size: 16px;
+  //   border-radius: 8px;
+  //   border: 1px solid #ccc;
+  //   margin-bottom: 20px;
+  //   background-color: #fff;
+  //   opacity: 100%;
+  //   margin-top: 10px;
+  // }
 
-    // button:hover {
-    //   background-color: #4a4b55;
-    // }
+  // button {
+  //   width: 100%;
+  //   padding: 12px;
+  //   font-size: 16px;
+  //   background-color: #5a5b65;
+  //   color: white;
+  //   border: none;
+  //   border-radius: 8px;
+  //   cursor: pointer;
+  //   transition: 0.3s;
+  // }
+
+  // button:hover {
+  //   background-color: #4a4b55;
+  // }
   // -----
   // background: {
   //   flex: 1,
@@ -76,74 +80,74 @@ const styles = StyleSheet.create({
   containerLogo: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 5, 
-    marginBottom: 30, 
-    backgroundColor: 'rgba(255, 255, 255, 0.78)', 
-     width: 270,
-      height:300,
-      marginTop: 140,
-      borderRadius:15,
-      marginLeft: 45,
+    padding: 20,
+    // marginBottom: 30,
+    backgroundColor: 'rgba(255, 255, 255, 0.78)',
+    width: '60%',
+    height: '25%',
+    // marginTop: 140,
+    borderRadius: 15,
+    // marginLeft: 45,
   },
-    containerLg: {
+  containerLg: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 5, 
- 
-    marginTop:40,
+    padding: 5,
+
+    marginTop: 40,
   },
   logo: {
-     flexDirection: 'row',
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     height: 65,
-    width:65,
-    marginTop:1,
-    marginRight: 20, 
+    width: 65,
+    marginTop: 1,
+    marginRight: 20,
     resizeMode: 'stretch',
   },
   txtLogo: {
-     flexDirection: 'row',
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: 26, 
-    fontWeight: 'bold', 
-  }, 
-   txt: {
+    fontSize: 26,
+    fontWeight: 'bold',
+  },
+  txt: {
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: 16, 
-    fontWeight: 'bold', 
-     marginBottom: 30,
-     color: 'rgba(61, 58, 58, 1)',
-  }, 
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 30,
+    color: 'rgba(61, 58, 58, 1)',
+  },
   // title: {
   //   fontSize: 20,
   //   fontWeight: '600',
   //   color: '#000',
   //   fontFamily: 'Poppins',
   // },
-   containerTxt: {
+  containerTxt: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 5, 
+    padding: 5,
     marginBottom: 30,
-    marginTop: 10 , 
+    marginTop: 10,
 
   },
   pickerWrapper: {
-    flexDirection: 'row' ,
+    flexDirection: 'row',
     borderWidth: 1,
     height: 30,
-    width:190,
+    width: 190,
     borderColor: '#ccc',
     borderRadius: 3,
     marginTop: 20,
     marginBottom: 20,
     backgroundColor: '#fff',
     fontSize: 18,
-    alignItems: 'center' ,
+    alignItems: 'center',
   },
   // button: {
   //   width: '100%',

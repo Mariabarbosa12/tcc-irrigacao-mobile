@@ -18,7 +18,7 @@ export default function Login({ navigation }) {
   const [senha, setSenha] = useState('');
 
   return (
-    <ImageBackground source={fundo} resizeMode="cover" style={styles.container}>
+    <ImageBackground source={fundo} resizeMode="stretch" style={styles.container}>
       <View style={styles.loginContainer}>
         <Image source={usuarioImg} style={styles.imgUsu} />
         <Text style={styles.title}>Login</Text>
