@@ -2,29 +2,35 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+   width: '100%', 
+    height: '100%',
+    justifyContent: 'center',
     alignItems: 'center',
   },
 
   // HEADER
   header: {
-    width: '100%',
-    height: 60,
+   position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '6%',         // mantém % (ajuste conforme necessário)
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    borderBottomWidth: 2,
     borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
+    zIndex: 10,
   },
   logo: {
-    height: 40,
-    width: 40,
+    height: 78,
+    width: 78,
     marginRight: 10,
     resizeMode: 'contain',
   },
   headerText: {
-    fontSize: 30,
+    fontSize: 33,
     fontWeight: 'bold',
     color: '#111d9eff',
   },
@@ -32,10 +38,10 @@ const styles = StyleSheet.create({
   // CONTAINER PRINCIPAL
   contentBox: {
     backgroundColor: 'rgba(255,255,255,0.78)',
-    width: 300,
-    height: 370,
+    width: '92%',
+    height: '60%',
     borderRadius: 20,
-    marginTop: 125,
+    marginTop: 80,
     alignItems: 'center',
     padding: 30,
   },
@@ -50,8 +56,8 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#cfe8ff',
     borderRadius: 10,
-    width: '48%',
-    height: 130,
+    width: '45%',
+    height:'150%',
     padding: 17,
     alignItems: 'center',
     justifyContent: 'center',
@@ -59,22 +65,22 @@ const styles = StyleSheet.create({
   cardTitle: {
     color: '#0C1792',
     fontWeight: 'bold',
-    fontSize: 12,
+    fontSize: 30,
   },
   cardImg: {
-    width: 45,
-    height: 45,
+    width:95,
+    height: 95,
     marginVertical: 10,
     resizeMode: 'contain',
   },
   cardValue: {
-    fontSize: 17,
+    fontSize: 28,
     color: '#0C1792',
     fontWeight: 'bold',
   },
   picker: {
-    fontSize: 14,
-    marginRight:130,
+    fontSize: 25,
+    marginRight:180,
     backgroundColor: '#d4eaffff',
     color: '#1d236d',
     borderRadius: 10,
@@ -85,20 +91,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     width: '100%',
-    marginTop:80,
+    marginTop:'40%',
   },
   iconButton: {
     backgroundColor: '#e0f0ff',
     borderRadius: 10,
-    width: 52,
-    height: 55,
+    width: '22%',
+    height: '230%',
     alignItems: 'center',
     justifyContent: 'center',
   
   },
   iconImg: {
-    width: 38,
-    height: 38,
+    width: 68,
+    height: 66,
     resizeMode: 'contain',
   },
   powerOn: {

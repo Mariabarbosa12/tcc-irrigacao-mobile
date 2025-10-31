@@ -62,7 +62,7 @@ export default function Cadastro({ navigation }) {
 
         <TouchableOpacity
           style={styles.cadastroBtn}
-          onPress={() => navigation.navigate('Home')} // simulando window.location.href
+          onPress={() => navigation.navigate('Home')} 
         >
           <Text style={styles.cadastroBtnText}>Cadastre-se</Text>
         </TouchableOpacity>

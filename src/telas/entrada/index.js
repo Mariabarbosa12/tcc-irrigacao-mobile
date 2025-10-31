@@ -5,6 +5,7 @@ import {
   Image,
   Button,
   ImageBackground,
+  TouchableOpacity,
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
@@ -42,10 +43,13 @@ export default function Entrada({ navigation }) {
           <option value="usuario">Usuário</option>
           <option value="tecnico">Técnico</option>
         </select> */}
-          <Button 
-            color={'#5a5b65'} title="Entrar"
-            onPress={() => navigation.navigate('Login')}
-          />
+         
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Login')} // aqui simula o window.location.href
+        >
+          <Text style={styles.buttonText}>Entrar</Text>
+        </TouchableOpacity>
         </View>
       </View>
 
