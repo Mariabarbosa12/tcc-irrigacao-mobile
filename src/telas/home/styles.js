@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    height: '6%',         // mantém % (ajuste conforme necessário)
+    height: '7%',        
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   picker: {
     fontSize: 25,
-    marginRight:180,
+    marginRight:390,
     backgroundColor: '#d4eaffff',
     color: '#1d236d',
     borderRadius: 10,
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#e0f0ff',
     borderRadius: 10,
     width: '22%',
-    height: '230%',
+    height: '210%',
     alignItems: 'center',
     justifyContent: 'center',
   

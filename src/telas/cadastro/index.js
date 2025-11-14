@@ -20,7 +20,7 @@ export default function Cadastro({ navigation }) {
   const [confirmarSenha, setConfirmarSenha] = useState('');
 
   return (
-    <ImageBackground source={fundo} resizeMode="cover" style={styles.container}>
+    <ImageBackground source={fundo} resizeMode="stretch" style={styles.container}>
       <View style={styles.cadastroContainer}>
         <Image source={usuarioImg} style={styles.imgUsu} />
         <Text style={styles.title}>Cadastre-se</Text>

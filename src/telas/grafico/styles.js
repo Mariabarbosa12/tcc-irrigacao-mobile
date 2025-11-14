@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    height: '6%',         // mantém % (ajuste conforme necessário)
+    height: '7%',         // mantém % (ajuste conforme necessário)
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
@@ -26,8 +26,9 @@ const styles = StyleSheet.create({
     left: 15,
   },
   backIcon: {
-    width: 30,
-    height: 30,
+    width: 40,
+    height: 45,
+    resizeMode: 'contain',
   },
   logoHeader: {
     width: 78,
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   chartContainerBox: {
     backgroundColor: 'rgba(255,255,255,0.78)',
-      width: '92%',
+      width: '95%',
     height: '58%',
     padding: 20,
     borderRadius: 20,

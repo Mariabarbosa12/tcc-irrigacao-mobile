@@ -2,36 +2,44 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   background: {
-    flex: 1,
-  },
-  container: {
-    flex: 1,
+  
+   width: '100%', 
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   // Header
-  header: {
-    width: '100%',
-    height: 60,
+ header: {
+     position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '7%',         
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    borderBottomWidth: 2,
     borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
+    zIndex: 10,
+  },
+    logo: {
+    height: 78,
+    width: 78,
+    marginRight: 10,
+    resizeMode: 'contain',
   },
   backButton: {
     position: 'absolute',
     left: 15,
   },
   backIcon: {
-    width: 30,
-    height: 30,
-  },
-  logo: {
-    height: 40,
     width: 40,
-    marginRight: 10,
+    height: 45,
+    resizeMode: 'contain',
   },
+
   headerTitle: {
     color: '#111d9eff',
     fontSize: 30,
@@ -41,8 +49,8 @@ const styles = StyleSheet.create({
   // Caixa do chat
   chatBox: {
     backgroundColor: 'rgba(255,255,255,0.85)',
-    width: 310,
-     height: 560,
+    width: '100%',
+    height: '130%',
     alignSelf: 'center',
     marginTop: 20,
     borderRadius: 15,

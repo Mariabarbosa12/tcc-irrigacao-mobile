@@ -30,27 +30,27 @@ export default function Grafico({ navigation }) {
     color: () => '#191e5aff',
     labelColor: () => '#000',
      propsForLabels: {
-    fontSize: 12,      
+    fontSize: 18,      
     fontWeight: 'bold',
-    dy: -5,
+
      fontFamily: 'Lucida Sans',
   },
 
     propsForBackgroundLines: {
       stroke: 'rgba(39, 37, 37, 0.83)', 
-      strokeWidth: 0.5,
+      strokeWidth: 0.6,
       strokeDasharray: [], 
     },
   };
 
   return (
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-      <ImageBackground source={fundo} resizeMode="cover" style={styles.container}>
+      <ImageBackground source={fundo} resizeMode="stretch" style={styles.container}>
         {/* Header */}
         <View style={styles.header}>
           <TouchableOpacity
             style={styles.backButton}
-            onPress={() => navigation.goBack()}
+            onPress={() =>  navigation.navigate("Home")}
           >
             <Image source={voltar} style={styles.backIcon} />
           </TouchableOpacity>
@@ -65,7 +65,7 @@ export default function Grafico({ navigation }) {
           <BarChart
             data={data}
             width={screenWidth - 60}
-            height={400}
+            height={640}
             fromZero
             yAxisSuffix=" L"
             chartConfig={chartConfig}

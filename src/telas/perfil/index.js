@@ -1,21 +1,28 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, TextInput, ScrollView, ImageBackground } from 'react-native';
 import styles from './styles';
+import logo from '../../../assets/logo.png';
+import fundo from '../../../assets/fundomobile.png';
+import voltar from '../../../assets/voltar.png';
+import user from '../../../assets/usu.png'
 
-export default function Perfil() {
+export default function Perfil({ navigation }) {
   return (
-    <ImageBackground source={require('../../../assets/fundomobile.png')} style={styles.background}>
+    <ImageBackground source={fundo} resizeMode="stretch" style={styles.background}>
       {/* HEADER */}
       <View style={styles.header}>
-        <TouchableOpacity style={styles.backButton} onPress={() => window.location.href='../home/home.html'}>
-          <Image source={require('../../../assets/voltar.png')} style={styles.backIcon} />
-        </TouchableOpacity>
-        <Image source={require('../../../assets/logo.png')} style={styles.logo} />
+            <TouchableOpacity
+            style={styles.backButton}
+            onPress={() => navigation.navigate('Home')}
+          >
+            <Image source={voltar} style={styles.backIcon} />
+          </TouchableOpacity>
+        <Image source={logo} style={styles.logo} />
         <Text style={styles.headerText}>BLUVA</Text>
       </View>
 
       {/* CONTAINER */}
-      <ScrollView contentContainerStyle={styles.scrollContainer}>
+      <ScrollView contentContainerStyle={styles.todoContainer}>
         <View style={styles.container}>
           <Text style={styles.title}>PERFIL DO USUÁRIO</Text>
 
@@ -23,7 +30,7 @@ export default function Perfil() {
             {/* SEÇÃO DE INFORMAÇÕES */}
             <View style={styles.infoSection}>
               <View style={styles.perfilInfo}>
-                <Image source={require('../../../assets/usu.png')} style={styles.perfilFoto} />
+                <Image source={user} style={styles.perfilFoto} />
                 <View>
                   <Text style={styles.label}>APELIDO:</Text>
                   <TextInput style={styles.inputS} value="@Usuário123" editable={false} />

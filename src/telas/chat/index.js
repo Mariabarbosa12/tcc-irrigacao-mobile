@@ -36,13 +36,13 @@ export default function Chat({ navigation }) {
   };
 
   return (
-    <ImageBackground source={fundo} style={styles.background}>
-      <View style={styles.container}>
-        {/* Header */}
+    <ImageBackground source={fundo} resizeMode="stretch" style={styles.background}>
+     
+               {/* Header */}
         <View style={styles.header}>
           <TouchableOpacity
             style={styles.backButton}
-            onPress={() => navigation.navigate("Home")}
+            onPress={() => navigation.navigate('Home')}
           >
             <Image source={voltar} style={styles.backIcon} />
           </TouchableOpacity>
@@ -51,6 +51,7 @@ export default function Chat({ navigation }) {
           <Text style={styles.headerTitle}>BLUVA</Text>
         </View>
 
+      <View >
         {/* Caixa de chat */}
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : undefined}
