@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    height: '7%',        
+        
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
@@ -24,13 +24,13 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
   logo: {
-    height: 78,
-    width: 78,
+    height: 170,
+    width: 170,
     marginRight: 10,
     resizeMode: 'contain',
   },
   headerText: {
-    fontSize: 33,
+    fontSize: 80,
     fontWeight: 'bold',
     color: '#111d9eff',
   },
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   contentBox: {
     backgroundColor: 'rgba(255,255,255,0.78)',
     width: '92%',
-    height: '60%',
+    height: '65%',
     borderRadius: 20,
     marginTop: 80,
     alignItems: 'center',
@@ -55,35 +55,38 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: '#cfe8ff',
-    borderRadius: 10,
+    borderRadius: 70,
     width: '45%',
-    height:'150%',
-    padding: 17,
+    height:'120%',
+    padding: 12,
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 120,
+    marginTop:150,
   },
   cardTitle: {
     color: '#0C1792',
     fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: 100,
+    marginBottom: 50,
   },
   cardImg: {
-    width:95,
-    height: 95,
+    width:260,
+    height: 260,
     marginVertical: 10,
     resizeMode: 'contain',
   },
   cardValue: {
-    fontSize: 28,
+    fontSize: 100,
     color: '#0C1792',
     fontWeight: 'bold',
   },
   picker: {
-    fontSize: 25,
-    marginRight:390,
+    fontSize: 70,
+    marginRight:1280,
     backgroundColor: '#d4eaffff',
     color: '#1d236d',
-    borderRadius: 10,
+    borderRadius: 20,
   },
 
   // BOTÕES
@@ -91,11 +94,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     width: '100%',
-    marginTop:'40%',
+    marginTop:'42%',
   },
   iconButton: {
     backgroundColor: '#e0f0ff',
-    borderRadius: 10,
+    borderRadius: 70,
     width: '22%',
     height: '210%',
     alignItems: 'center',
@@ -103,8 +106,8 @@ const styles = StyleSheet.create({
   
   },
   iconImg: {
-    width: 68,
-    height: 66,
+    width: 220,
+    height: 220,
     resizeMode: 'contain',
   },
   powerOn: {
