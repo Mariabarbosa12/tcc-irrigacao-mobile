@@ -40,22 +40,55 @@ const styles = StyleSheet.create({
     fontSize: 80,
     fontWeight: 'bold',
   },
-  chartContainerBox: {
+  containerBox: {
     backgroundColor: 'rgba(255,255,255,0.78)',
       width: '95%',
-    height: '58%',
+    height:'82%',
     padding: 20,
     borderRadius: 20,
     marginTop: 50,
     alignItems: 'center',
-    marginLeft:15,
+    
 
   },
   title: {
-    fontSize: 28,
+    fontSize: 90,
     marginBottom: 12,
     fontWeight: 'bold',
   },
+    txt: {
+    fontSize: 60,
+    marginTop: 0, // removido
+  },
+
+  txtDois: {
+    fontSize: 60,
+    marginTop: 0, // removido
+  },
+
+  titulo: {
+    fontSize: 70,
+    marginTop: 10, // reduzido
+    marginBottom: 10,
+    fontWeight: 'bold',
+    textAlign: 'left',
+  },
+
+  paragrafo: {
+    marginTop: 15,  // reduzido
+    marginBottom: 10,
+    fontSize: 55,
+    textAlign: 'left',
+    lineHeight: 65,
+  },
+
+
+  scrollArea: {
+  width: '100%',
+  height: '95%',  
+  marginTop: 10,
+},
+  
 });
 
 export default styles;
