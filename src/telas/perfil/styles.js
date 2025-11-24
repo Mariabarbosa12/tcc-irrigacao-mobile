@@ -15,7 +15,7 @@ export default StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    height: '7%',         
+         
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
@@ -25,8 +25,8 @@ export default StyleSheet.create({
     zIndex: 10,
   },
     logo: {
-    height: 78,
-    width: 78,
+    height: 170,
+    width: 170,
     marginRight: 10,
     resizeMode: 'contain',
   },
@@ -35,14 +35,14 @@ export default StyleSheet.create({
     left: 15,
   },
   backIcon: {
-    width: 40,
-    height: 45,
+    width: 140,
+    height: 145,
     resizeMode: 'contain',
   },
 
   headerText: {
     color: '#0C1792',
-    fontSize: 30,
+    fontSize: 80,
     fontWeight: 'bold',
   },
 

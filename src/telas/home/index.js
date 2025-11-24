@@ -12,7 +12,7 @@ import fundo from '../../../assets/fundomobile.png';
 import logo from '../../../assets/logo.png';
 import umidadeImg from '../../../assets/umidade.png';
 import temperaturaImg from '../../../assets/temperatura.png';
-import gotaImg from '../../../assets/gota.png';
+import engre from '../../../assets/engre.png'
 import userImg from '../../../assets/user.png';
 import ajudaImg from '../../../assets/ajuda.png';
 import ligaImg from '../../../assets/liga.png';
@@ -84,9 +84,9 @@ return ( <ImageBackground source={fundo} resizeMode="cover" style={styles.contai
     <View style={styles.buttonRow}>
       <TouchableOpacity
         style={styles.iconButton}
-        onPress={() => navigation.navigate('Grafico')}
+        onPress={() => navigation.navigate('Termos')}
       >
-        <Image source={gotaImg} style={styles.iconImg} />
+        <Image source={engre} style={styles.iconImg} />
       </TouchableOpacity>
 
       <TouchableOpacity

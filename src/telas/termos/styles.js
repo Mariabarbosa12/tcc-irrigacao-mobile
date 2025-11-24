@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   header: {
-     position: 'absolute',
+   position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
-    height: '7%',         // mantém % (ajuste conforme necessário)
+        
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
@@ -26,18 +26,18 @@ const styles = StyleSheet.create({
     left: 15,
   },
   backIcon: {
-    width: 40,
-    height: 45,
+    width: 140,
+    height: 145,
     resizeMode: 'contain',
   },
   logoHeader: {
-    width: 78,
-    height: 78,
+    width: 170,
+    height: 170,
     marginRight: 10,
   },
   logoText: {
     color: '#111d9eff',
-    fontSize: 33,
+    fontSize: 80,
     fontWeight: 'bold',
   },
   chartContainerBox: {

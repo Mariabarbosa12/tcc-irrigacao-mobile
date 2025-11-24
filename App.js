@@ -5,7 +5,7 @@ import Entrada from './src/telas/entrada';
 import Login from './src/telas/login';
 import Cadastro from './src/telas/cadastro';
 import Home from './src/telas/home';
-import Grafico from './src/telas/grafico';
+import Grafico from './src/telas/termos';
 import Chat from './src/telas/chat'; 
 import Perfil from './src/telas/perfil';
 
