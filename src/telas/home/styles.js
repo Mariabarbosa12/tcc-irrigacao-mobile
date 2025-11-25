@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     fontSize: 100,
     color: '#0C1792',
     fontWeight: 'bold',
+    marginTop:40,
   },
   picker: {
     fontSize: 70,

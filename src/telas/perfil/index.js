@@ -22,7 +22,7 @@ export default function Perfil({ navigation }) {
       </View>
 
       {/* CONTAINER */}
-      <ScrollView contentContainerStyle={styles.todoContainer}>
+      <View style={styles.todoContainer}>
         <View style={styles.container}>
           <Text style={styles.title}>PERFIL DO USUÁRIO</Text>
 
@@ -58,11 +58,11 @@ export default function Perfil({ navigation }) {
               <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>ALTERAR APELIDO</Text></TouchableOpacity>
               <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>ALTERAR DADOS PESSOAIS</Text></TouchableOpacity>
               <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>EXCLUIR CONTA</Text></TouchableOpacity>
-              <TouchableOpacity style={styles.buttonS}><Text style={styles.buttonText}>SAIR DA CONTA</Text></TouchableOpacity>
+              <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>SAIR DA CONTA</Text></TouchableOpacity>
             </View>
           </View>
         </View>
-      </ScrollView>
+      </View>
     </ImageBackground>
   );
 }

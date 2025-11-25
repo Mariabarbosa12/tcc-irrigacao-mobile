@@ -22,12 +22,12 @@ export default StyleSheet.create({
 
     borderBottomColor: '#ccc',
     borderBottomWidth: 1,
-    paddingVertical: 10,   // <-- para dar altura sem exagero
+    paddingVertical: 10,   
     zIndex: 10,
   },
 
   logo: {
-    height: 170,          // <-- tamanho mobile adequado
+    height: 170,         
     width: 170,
     marginRight: 10,
     resizeMode: 'contain',
@@ -39,27 +39,27 @@ export default StyleSheet.create({
   },
 
   backIcon: {
-    width: 140,     // <-- ajustado
+    width: 140,     
     height: 145,
     resizeMode: 'contain',
   },
 
   headerText: {
     color: '#0C1792',
-    fontSize: 80,   // <-- ideal pra mobile
+    fontSize: 80,   
     fontWeight: 'bold',
   },
 
   // CONTAINER
   todoContainer: {
-    paddingTop: 120,   // <-- posição após header
-    width: '120%',
+    paddingTop:350,   
+    width: '100%',
     alignItems: 'center',
   },
 
   container: {
     backgroundColor: 'rgba(255,255,255,0.78)',
-    width: '90%',          // <-- ajustado
+    width: '95%',          
     padding: 20,
     borderRadius: 15,
     marginTop: 120,
@@ -76,7 +76,7 @@ export default StyleSheet.create({
   // PERFIL INFO
   cccontainer: {
     backgroundColor: '#b3d7ff',
-    width: '100%',       // <-- corrigido
+    width: '100%',       
     padding: 20,
     borderRadius: 15,
     flexDirection: 'row',
@@ -84,69 +84,80 @@ export default StyleSheet.create({
   },
 
   infoSection: {
-    width: '60%',
+    width: '58%',
   },
 
   perfilInfo: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 90,
   },
 
   perfilFoto: {
-    width: 60,
-    height: 60,
+    width: 290,
+    height: 290,
     borderRadius: 30,
-    marginRight: 20,
+    marginRight: 100,
+    marginBottom:45,
+    marginTop:30,
+    marginLeft:30,
   },
 
   label: {
     fontWeight: 'bold',
-    marginBottom: 5,
+    marginBottom: 35,
+    fontSize:65,
+    marginTop: 50,
   },
 
   inputInfo: {
-    marginBottom: 15,
+    marginBottom: 35,
   },
 
   input: {
-    padding: 10,
-    marginBottom: 15,
-    borderRadius: 7,
+    padding: 30,
+    marginBottom: 45,
+    marginTop:25,
+    borderRadius: 20,
     borderWidth: 1,
     borderColor: '#ccc',
-    fontSize: 14,
+    fontSize: 60,
+    width: '100%',
+    backgroundColor: '#fff',
+  },
+
+  inputS: {
+    padding: 20,
+    marginBottom: 15,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    fontSize: 50,
     width: '100%',
     backgroundColor: '#fff',
   },
 
   // BOTÕES
   buttonSection: {
-    width: '35%',
+    width: '38%',
     alignItems: 'center',
+    marginTop:320,
+    
   },
 
   button: {
     backgroundColor: '#fff',
     padding: 10,
     width: '100%',
-    borderRadius: 7,
-    marginTop: 15,
+    borderRadius: 20,
+    marginTop: 200,
     alignItems: 'center',
   },
 
-  buttonS: {
-    backgroundColor: '#e98a7f',
-    padding: 10,
-    width: '100%',
-    borderRadius: 7,
-    marginTop: 15,
-    alignItems: 'center',
-  },
 
   buttonText: {
     fontWeight: 'bold',
-    fontSize: 12,
+    fontSize: 60,
     color: '#000',
   },
 });

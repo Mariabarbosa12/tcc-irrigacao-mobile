@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     width: 170,
     height: 170,
     marginRight: 10,
+    resizeMode: 'contain',
   },
   logoText: {
     color: '#111d9eff',
